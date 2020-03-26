@@ -9,7 +9,7 @@ import androidx.lifecycle.LiveData;
 
 public class ViewModel extends AndroidViewModel {
 
-    private Repo repo;
+    private final Repo repo;
 
     public ViewModel(@NonNull Application application) {
         super(application);

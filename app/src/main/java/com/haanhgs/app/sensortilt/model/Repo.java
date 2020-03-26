@@ -13,12 +13,13 @@ import static android.content.Context.WINDOW_SERVICE;
 
 public class Repo implements SensorEventListener {
 
+    private final MutableLiveData<Sensors> liveSensors = new MutableLiveData<>();
+    private final Sensors sensors = new Sensors();
+
     private SensorManager sensorManager;
     private Sensor accelerator;
     private Sensor magnetor;
-    private Context context;
-    private Sensors sensors = new Sensors();
-    private MutableLiveData<Sensors> liveSensors = new MutableLiveData<>();
+    private final Context context;
 
     private float[] acceleratorData = new float[3];
     private float[] magnetorData = new float[3];
