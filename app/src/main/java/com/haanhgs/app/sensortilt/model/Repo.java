@@ -7,11 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.view.Surface;
 import android.view.WindowManager;
-
-import com.haanhgs.app.sensortilt.R;
-
 import androidx.lifecycle.MutableLiveData;
-
 import static android.content.Context.SENSOR_SERVICE;
 import static android.content.Context.WINDOW_SERVICE;
 
@@ -118,8 +114,7 @@ public class Repo implements SensorEventListener {
             pitch = orientation[1];
             roll = orientation[2];
         }
-        if (Math.abs(pitch) < 0.1f) pitch = 0f;
-        if (Math.abs(roll) < 0.1f) roll = 0f;
+
         sensors.setAzimuth(azimuth);
         sensors.setPitch(pitch);
         sensors.setRoll(roll);
