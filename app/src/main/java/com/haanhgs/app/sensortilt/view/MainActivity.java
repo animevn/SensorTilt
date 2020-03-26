@@ -1,4 +1,4 @@
-package com.haanhgs.app.sensortilt;
+package com.haanhgs.app.sensortilt.view;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -9,6 +9,7 @@ import android.view.Surface;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.haanhgs.app.sensortilt.R;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import butterknife.BindView;
