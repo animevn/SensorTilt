@@ -1,4 +1,4 @@
-package com.haanhgs.app.sensortiltdemo;
+package com.haanhgs.app.sensortilt;
 
 import org.junit.Test;
 

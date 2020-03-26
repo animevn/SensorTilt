@@ -1,4 +1,4 @@
-package com.haanhgs.app.sensortiltdemo;
+package com.haanhgs.app.sensortilt;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
